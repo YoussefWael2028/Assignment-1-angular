@@ -1,0 +1,21 @@
+<h1 class="text-[#1a252f] text-4xl text-center uppercase mt-32 font-bold">conatct section</h1>
+<app-starbanner [isWhite]="false"></app-starbanner>
+<div class="container mx-auto py-5 h-96">
+    <div class="relative my-8">
+      <label for="Username" [ngClass]="{'focused': isTyping['Username']}" class="absolute text-xs text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 font-light">User Name</label>
+      <input type="text" (input)="onInput('Username', $event)" (blur)="onBlur('Username')" class="block w-full px-3 py-2 text-sm text-gray-900 bg-gray-50 border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" id="Username" placeholder="User Name">
+    </div>
+    <div class="relative my-8">
+      <label for="UserAge" [ngClass]="{'focused': isTyping['UserAge']}" class="absolute text-xs text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 font-light">User Age</label>
+      <input type="number" (input)="onInput('UserAge', $event)" (blur)="onBlur('UserAge')" class="block w-full px-3 py-2 text-sm text-gray-900 bg-gray-50 border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" id="UserAge" placeholder="User Age">
+    </div>
+    <div class="relative my-8">
+      <label for="userEmail" [ngClass]="{'focused': isTyping['userEmail']}" class="absolute text-xs text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 font-light">User Email</label>
+      <input type="email" (input)="onInput('userEmail', $event)" (blur)="onBlur('userEmail')" class="block w-full px-3 py-2 text-sm text-gray-900 bg-gray-50 border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" id="userEmail" placeholder="User Email">
+    </div>
+    <div class="relative my-8">
+      <label for="password" [ngClass]="{'focused': isTyping['password']}" class="absolute text-xs text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 font-light">Password</label>
+      <input type="password" (input)="onInput('password', $event)" (blur)="onBlur('password')" class="block w-full px-3 py-2 text-sm text-gray-900 bg-gray-50 border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" id="password" placeholder="Password">
+    </div>
+  </div>
+  

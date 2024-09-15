@@ -1,0 +1,13 @@
+.container{
+    width:800px;
+}
+label{
+    color: #1ABC9C;
+    transform:translateY(100%);   
+    opacity: 0;
+    transition:all 0.3s ease;
+}
+label.focused {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
